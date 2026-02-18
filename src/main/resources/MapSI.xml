@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="customer" class="org.example.collectionInjection.map.Customer">
+        <property name="id" value="2389230"/>
+        <property name="products">
+            <map>
+                <entry key="100" value="IPhone"/>
+                <entry key="200">
+                    <value>MacBook</value>
+                </entry>
+                <entry value="IPad">
+                    <key>
+                        <value>300</value>
+                    </key>
+                </entry>
+                <entry>
+                    <key>
+                        <value>400</value>
+                    </key>
+                    <value>Macbook Air</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

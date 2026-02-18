@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!--    <bean id="employee" class="org.example.setterInjection.Employee">-->
+<!--&lt;!&ndash;        *** Value as a tag ***   &ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="id">&ndash;&gt;-->
+<!--&lt;!&ndash;            <value>2389230</value>&ndash;&gt;-->
+<!--&lt;!&ndash;        </property>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="name">&ndash;&gt;-->
+<!--&lt;!&ndash;            <value>Karthik</value>&ndash;&gt;-->
+<!--&lt;!&ndash;        </property>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        *** Value as an attribute *** &ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="id" value="2389230"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="name" value="Karthik"/>&ndash;&gt;-->
+<!--    </bean>-->
+
+    <bean id="employee" class="org.example.setterInjection.Employee" p:id="2389230" p:name="Karthik"/>
+
+</beans>
